@@ -1,0 +1,263 @@
+@font-face {
+    font-family: varelaRound-regular;
+    src: url(../../statics/fonts/VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(../../statics/fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(../../statics/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../../statics/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(../../statics/fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(../../statics/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: roboto-italic;
+    src: url(../../statics/fonts/Roboto-MediumItalic.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;  
+}
+
+#main{
+    background-color: #525659;
+}
+
+.principal_layout{
+    background-color: snow;
+    /*background-color: whitesmoke;*/
+    /*background-color: ghostwhite;*/
+    /*background-color: mintcream;*/
+}
+
+p {
+    font-family: 'roboto'
+}
+
+p::selection{
+    background: none; /* #9bbaf1 */
+    color: #ff5733;
+}
+
+hr{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover > div > P{
+    background-color: #f7f7f7;
+}
+
+.Header{
+    background-color: #0c343d;
+}
+
+.Title{
+    font-family: 'roboto-bold';
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 0.05rem;
+    margin: 15px 0 0 1em;
+    padding: 0;
+}
+
+.Subtitle{
+    font-family: 'roboto-bold';
+    font-size: 1.5em;
+    color: #171717;
+}
+
+.Header .Subtitle{
+    font-family: 'roboto-thin';
+    font-size: 1em;
+    color: white;
+    padding: 0;
+}
+
+.Location{
+    font-family: 'roboto';
+    font-size: 0.8rem;
+    color: white;
+    text-align: right;
+    height: max-content;
+    position: relative;
+    top: 40%;
+    padding: 0 15px 0 0;
+}
+
+@media only screen and (min-width: 840px){
+    .Header .Subtitle{
+        margin: 0 0 20px 2em;
+    }
+    .Location{
+        position: relative;
+        top: 40%;
+        padding: 0 15px 0 0;
+    }
+}
+@media only screen and (max-width: 839px){
+    .Header .Subtitle{
+        margin: 0 0 0 2em;
+    }
+    .Location{
+        position: inherit;
+        text-align: left;
+        margin: 0 0 10px 30px;
+    }
+}
+
+.Resume{
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+.ProfessionalExperience{
+    padding: 0 15px;
+}
+
+.ExperienceItem{
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.SectionDateTitleDescription_Date p{
+    font-family: 'roboto-bold';
+}
+
+.SectionDateTitleDescription_Title p{
+    font-family: 'roboto-bold';
+}
+
+.SectionDateTitleDescription_Entity p{
+    font-family: 'roboto-italic';
+    font-size: 0.9em;
+}
+
+.SectionUnorderedList{
+    font-size: 0.9em;
+    padding: 0 15px;
+}
+
+.Education{
+    padding: 0 15px;
+}
+
+.EducationItem{
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.Hobbies{
+    margin: 0 0 30px 10%;
+}
+
+.Hobbies p{
+    float: left;
+}
+
+.Hobbies-title p{
+    font-family: 'roboto-bold';
+}
+
+/* Complementary Column */
+.Complementary{
+    background-color: #efefef;
+    overflow-wrap: break-word;
+    position: relative;
+    top: -24px;
+    padding: 16px;
+    margin-bottom: -24px;
+}
+
+.Complementary-content > div{
+    margin-bottom: 20px;
+}
+
+.SectionTitleShortDescription{
+    margin: 0 0 5px 0;
+}
+
+.SectionTitleShortDescription p:first-child{
+    font-size: 1em;
+    font-family: 'roboto-bold';
+    color: #444;
+}
+
+.SectionTitleShortDescription p:nth-child(2){
+    font-size: 0.9em;
+    color: #121212;
+}
+
+.ElementAndLevel{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.ElementAndLevel > p{
+    font-size: 0.95em;
+    color: #444;
+}
+
+.ElementAndLevel > div{
+    height: 25px;
+    text-align: right;
+}
+
+.ElementAndLevel > div img{
+    margin-left: 3px;
+}
+
+.ElementAndLevel > div p{
+    font-size: 0.8em;
+    color: #444;
+}
+
+.ElementAndLevel_LevelProgress_Container{
+    width: 100%;
+}
+
+.LevelProgressGenerator{
+    width: fit-content;
+    float: right;
+}
+
+.Footer{
+    background-color: #0c343d;
+    padding: 15px;
+    text-align: center;
+    margin-top: -24px;
+}
+
+.Footer p{
+    color: white;
+    font-family: 'roboto-light';
+    font-size: 0.8em;
+}
+
+.Footer > p > a{
+    /*text-decoration: none;*/
+    color: white;
+}
+
+.Footer > p > a:hover{
+    /*text-decoration: none;*/
+    color: #61dafb;
+}
+
+/* */
