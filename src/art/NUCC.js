@@ -69,8 +69,9 @@ window.addEventListener('load', () => {
 
 
     const canvas = document.createElement("canvas");
-    canvas.style.position = "relative"
-    canvas.style.top = "-80px"
+    canvas.style.position = "absolute"
+    canvas.style.top = "0"
+    canvas.style.zIndex = "99"
     canvas.style.cursor = "pointer"
     canvas.width = 500
     canvas.height = 500
@@ -79,7 +80,7 @@ window.addEventListener('load', () => {
     var downLimit = 0;
     var c = 0.5
         //canvas.style.border = "1px solid black"
-    document.querySelector("#portal").appendChild(canvas);
+    document.querySelector("#main").prepend(canvas);
     const ctx = canvas.getContext('2d');
 
 

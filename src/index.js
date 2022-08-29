@@ -31,7 +31,7 @@ class Main extends Component {
             style={{
               width: '60vw',
               marginLeft: '20%',
-              marginTop: '60%',
+              marginTop: '1200px',
               position: 'absolute',
               zIndex: '2',
               display: 'block',
