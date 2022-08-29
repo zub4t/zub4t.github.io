@@ -37,7 +37,8 @@ const resize = (w) => {/*
   }, 10)*/
 }
 function ProfessionalExperience(props) {
-  const titulo = dictionary.professional_experience
+  //const titulo = dictionary.professional_experience
+  const titulo =""
 
   return (
     <div className="Projects mdc-layout-grid__cell--span-12">

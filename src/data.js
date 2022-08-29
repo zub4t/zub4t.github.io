@@ -11,13 +11,23 @@ module.exports = {
         },
         "body": {
             "principal": {
-                "resume": "",
-                "professionalExperience": [{
+                "resume": "I am a passionate ❤❤ technology student who's interested in a wide range of areas. However, the main focus of my studies so far is on low-level programming/Radio Communications Systems/Graphical programming ",
+                "professionalExperience": [
+
+                    {
                         "title": "Researcher",
-                        "date": "07/2021 - Current position",
+                        "date": "07/2022 - 00/00",
+                        "entity": "FCUP / SafeCities (POCI-01-0247-FEDER-041435)",
+                        "activities": [
+                            "Development of new algorithms for localization using IEEE 802.11mc technology"
+                        ]
+                    },
+                    {
+                        "title": "Researcher",
+                        "date": "07/2021 - 07/2022",
                         "entity": "INESC TEC",
                         "activities": [
-                            "Helping to craft modern program exercise assessment software"
+                            "Responsible for the xml-validato/feedback-mannager/YAPEXIL-cli at JuezLTI EU-project "
                         ]
                     },
                     {

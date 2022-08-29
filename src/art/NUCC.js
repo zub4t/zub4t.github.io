@@ -69,6 +69,8 @@ window.addEventListener('load', () => {
 
 
     const canvas = document.createElement("canvas");
+    canvas.style.position = "relative"
+    canvas.style.top = "-80px"
     canvas.style.cursor = "pointer"
     canvas.width = 500
     canvas.height = 500

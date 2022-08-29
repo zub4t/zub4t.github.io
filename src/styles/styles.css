@@ -2,41 +2,55 @@
     font-family: varelaRound-regular;
     src: url(../../statics/fonts/VarelaRound-Regular.ttf);
 }
+
 @font-face {
     font-family: roboto-black;
     src: url(../../statics/fonts/Roboto-Black.ttf);
 }
+
 @font-face {
     font-family: roboto-bold;
     src: url(../../statics/fonts/Roboto-Bold.ttf);
 }
+
 @font-face {
     font-family: roboto;
     src: url(../../statics/fonts/Roboto-Regular.ttf);
 }
+
 @font-face {
     font-family: roboto-light;
     src: url(../../statics/fonts/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: roboto-thin;
     src: url(../../statics/fonts/Roboto-Thin.ttf);
 }
+
 @font-face {
     font-family: roboto-italic;
     src: url(../../statics/fonts/Roboto-MediumItalic.ttf);
 }
 
-*{
-    margin: 0%;
-    padding: 0%;  
+html {
+    background-color: black;
 }
 
-#main{
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#main {
     background-color: #525659;
 }
 
-.principal_layout{
+body {
+    overflow-x: hidden;
+}
+
+.principal_layout {
     background-color: snow;
     /*background-color: whitesmoke;*/
     /*background-color: ghostwhite;*/
@@ -47,28 +61,69 @@ p {
     font-family: 'roboto'
 }
 
-p::selection{
-    background: none; /* #9bbaf1 */
+p::selection {
+    background: none;
+    /* #9bbaf1 */
     color: #ff5733;
 }
 
-hr{
+hr {
     margin-bottom: 10px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-a:hover > div > P{
+a:hover>div>P {
     background-color: #f7f7f7;
 }
 
-.Header{
+.box {
+    z-index: 6;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fade-in-image-25 {
+    animation: fadeIn 25s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+
+.SelectionSection {
+    background-color: rgb(151, 151, 151, .7);
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    z-index: 5;
+    flex-wrap: wrap;
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.Header {
     background-color: #0c343d;
 }
 
-.Title{
+.Title {
     font-family: 'roboto-bold';
     font-size: 1.8rem;
     color: white;
@@ -77,20 +132,20 @@ a:hover > div > P{
     padding: 0;
 }
 
-.Subtitle{
+.Subtitle {
     font-family: 'roboto-bold';
     font-size: 1.5em;
     color: #171717;
 }
 
-.Header .Subtitle{
+.Header .Subtitle {
     font-family: 'roboto-thin';
     font-size: 1em;
     color: white;
     padding: 0;
 }
 
-.Location{
+.Location {
     font-family: 'roboto';
     font-size: 0.8rem;
     color: white;
@@ -101,82 +156,85 @@ a:hover > div > P{
     padding: 0 15px 0 0;
 }
 
-@media only screen and (min-width: 840px){
-    .Header .Subtitle{
+@media only screen and (min-width: 840px) {
+    .Header .Subtitle {
         margin: 0 0 20px 2em;
     }
-    .Location{
+    .Location {
         position: relative;
         top: 40%;
         padding: 0 15px 0 0;
     }
 }
-@media only screen and (max-width: 839px){
-    .Header .Subtitle{
+
+@media only screen and (max-width: 839px) {
+    .Header .Subtitle {
         margin: 0 0 0 2em;
     }
-    .Location{
+    .Location {
         position: inherit;
         text-align: left;
         margin: 0 0 10px 30px;
     }
 }
 
-.Resume{
+.Resume {
     padding: 0 15px;
     font-size: 1em;
 }
 
-.ProfessionalExperience{
+.ProfessionalExperience {
     padding: 0 15px;
 }
 
-.ExperienceItem{
+.ExperienceItem {
     padding: 16px;
     margin-bottom: 10px;
 }
 
-.SectionDateTitleDescription_Date p{
+.SectionDateTitleDescription_Date p {
     font-family: 'roboto-bold';
 }
 
-.SectionDateTitleDescription_Title p{
+.SectionDateTitleDescription_Title p {
     font-family: 'roboto-bold';
 }
 
-.SectionDateTitleDescription_Entity p{
+.SectionDateTitleDescription_Entity p {
     font-family: 'roboto-italic';
     font-size: 0.9em;
 }
 
-.SectionUnorderedList{
+.SectionUnorderedList {
     font-size: 0.9em;
     padding: 0 15px;
 }
 
-.Education{
+.Education {
     padding: 0 15px;
 }
 
-.EducationItem{
+.EducationItem {
     padding: 16px;
     margin-bottom: 10px;
 }
 
-.Hobbies{
+.Hobbies {
     margin: 0 0 30px 10%;
 }
 
-.Hobbies p{
+.Hobbies p {
     float: left;
 }
 
-.Hobbies-title p{
+.Hobbies-title p {
     font-family: 'roboto-bold';
 }
 
+
 /* Complementary Column */
-.Complementary{
+
+.Complementary {
     background-color: #efefef;
     overflow-wrap: break-word;
     position: relative;
@@ -185,79 +243,80 @@ a:hover > div > P{
     margin-bottom: -24px;
 }
 
-.Complementary-content > div{
+.Complementary-content>div {
     margin-bottom: 20px;
 }
 
-.SectionTitleShortDescription{
+.SectionTitleShortDescription {
     margin: 0 0 5px 0;
 }
 
-.SectionTitleShortDescription p:first-child{
+.SectionTitleShortDescription p:first-child {
     font-size: 1em;
     font-family: 'roboto-bold';
     color: #444;
 }
 
-.SectionTitleShortDescription p:nth-child(2){
+.SectionTitleShortDescription p:nth-child(2) {
     font-size: 0.9em;
     color: #121212;
 }
 
-.ElementAndLevel{
+.ElementAndLevel {
     margin-bottom: 10px;
     width: 100%;
 }
 
-.ElementAndLevel > p{
+.ElementAndLevel>p {
     font-size: 0.95em;
     color: #444;
 }
 
-.ElementAndLevel > div{
+.ElementAndLevel>div {
     height: 25px;
     text-align: right;
 }
 
-.ElementAndLevel > div img{
+.ElementAndLevel>div img {
     margin-left: 3px;
 }
 
-.ElementAndLevel > div p{
+.ElementAndLevel>div p {
     font-size: 0.8em;
     color: #444;
 }
 
-.ElementAndLevel_LevelProgress_Container{
+.ElementAndLevel_LevelProgress_Container {
     width: 100%;
 }
 
-.LevelProgressGenerator{
+.LevelProgressGenerator {
     width: fit-content;
     float: right;
 }
 
-.Footer{
+.Footer {
     background-color: #0c343d;
     padding: 15px;
     text-align: center;
     margin-top: -24px;
 }
 
-.Footer p{
+.Footer p {
     color: white;
     font-family: 'roboto-light';
     font-size: 0.8em;
 }
 
-.Footer > p > a{
+.Footer>p>a {
     /*text-decoration: none;*/
     color: white;
 }
 
-.Footer > p > a:hover{
+.Footer>p>a:hover {
     /*text-decoration: none;*/
     color: #61dafb;
 }
+
 
 /* */

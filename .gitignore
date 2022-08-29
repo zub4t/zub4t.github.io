@@ -1,0 +1,5 @@
+# Descartar los módulos de Node
+node_modules/
+
+# Descartar los logs generado por npm
+npm-debug.log

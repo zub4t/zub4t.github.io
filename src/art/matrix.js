@@ -6,8 +6,10 @@ window.addEventListener("load", () => {
 
     const ctx = canvas.getContext('2d');
 
-    const w = canvas.width = window.document.body.clientWidth
-    const h = canvas.height = window.document.querySelector(".principal_layout ").clientHeight + 200
+    const hh = window.document.querySelector(".principal_layout ").clientHeight + 200
+
+    const w = canvas.width = window.screen.width
+    const h = canvas.height = hh
     const cols = Math.floor(w / 20) + 1;
     const ypos = Array(cols).fill(0);
 
