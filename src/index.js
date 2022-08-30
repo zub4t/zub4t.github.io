@@ -25,13 +25,13 @@ class Main extends Component {
     return (
       <div>
         <div className="mdc-layout-grid__inner">
-          <SelectionSection />
+          {/*<SelectionSection />*/}
           <div
             className="principal_layout mdc-layout-grid__cell--span-12"
             style={{
               width: '60vw',
               marginLeft: '20%',
-              marginTop: '1200px',
+              marginTop: '120px',
               position: 'absolute',
               zIndex: '2',
               display: 'block',
