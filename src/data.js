@@ -69,14 +69,14 @@ module.exports = {
 
                 ],
                 "education": [{
-                        "title": "Master's in Network and Computer Systems Engineering (in progress)",
+                        "title": "Master's in Network and Computer Systems Engineering (in progress) (Current grade 18)",
                         "entity": "Faculty of Science University of  Porto, Porto, PT.",
                         "date": "07/2021",
                         "city": ""
                     },
 
                     {
-                        "title": "Computer Engineering Sciencest - (A grade) ",
+                        "title": "Computer Engineering Sciencest - (A grade) (15)",
                         "entity": "Faculty of Science University of  Porto, Porto, PT.",
                         "date": "2020",
                         "city": "PT, Porto"
